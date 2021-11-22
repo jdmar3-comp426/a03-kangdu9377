@@ -49,7 +49,7 @@ export function maxAndMin(numbers) {
             max_ret = numbers[i];
         }
     }
-    const ret = {max: max_ret, min: min_ret};
+    const ret = {max: Math.max(...numbers), min: Math.min(...numbers)};
     return ret
 }
 
