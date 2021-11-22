@@ -54,6 +54,13 @@ export function maxAndMin(numbers) {
  *
  */
 export function countArray(array) {
-    let ret = {...array};
+    let ret = {};
+    array.forEach(element => {
+        if (ret[element]){
+            ret[element]++;
+        } else{
+            ret[element] = 1;
+        }
+    });
     return ret;
 }
