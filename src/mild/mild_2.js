@@ -24,7 +24,10 @@ export function identifyVariable(variable) {
 
  */
 export function identifyArray(array) {
-
+   let ret = {}
+   array.forEach(element => {
+      ret[element] = {type: typeof(element), value: element};
+   });
 }
 
 /**
