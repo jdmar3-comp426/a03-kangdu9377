@@ -59,13 +59,13 @@ export function getMedian(array) {
 export function getStatistics(array) {
     let ret = {
         length: array.length,
-        sum: Math.sum(array),
-        mean: Math.mean(array),
-        median: Math.median(array),
-        min: Math.min(array),
-        max: Math.max(array),
-        variance: Math.variance(array),
-        standard_deviation: Math.standard_deviation,
+        sum: Math.sum(...array),
+        mean: Math.mean(...array),
+        median: Math.median(...array),
+        min: Math.min(...array),
+        max: Math.max(...array),
+        variance: Math.variance(...array),
+        standard_deviation: Math.standard_deviation(...array),
     };
     return ret;
 }
