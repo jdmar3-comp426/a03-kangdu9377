@@ -60,7 +60,7 @@ export function getStatistics(array) {
     let ret = {
         length: array.length,
         sum: getSum(array),
-        mean: getSum(array)/this.length,
+        mean: getSum(array)/array.length,
         median: getMedian(array),
         min: Math.min(...array),
         max: Math.max(...array),
