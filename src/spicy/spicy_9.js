@@ -125,7 +125,11 @@ export const everyEven = (arr, test) => {
  *    someEven([0, 0, 0, 0, 0], x => x === 0)  <--  returns true
  */
 export const someEven = (arr, test) => {
-
+    let arr1 = arr.filter(function(element, index, array){
+        return (index % 2 === 0);
+    });
+    let ret = arr1.filter(test);
+    return ret.length > 0;
 };
 
 
