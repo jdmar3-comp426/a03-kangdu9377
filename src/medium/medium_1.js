@@ -1,5 +1,4 @@
 import {variance} from "./data/stats_helpers.js";
-import {Math} from 'mathjs'
 
 /**
  * Gets the sum of an array of numbers.
@@ -66,7 +65,7 @@ export function getStatistics(array) {
         min: Math.min(...array),
         max: Math.max(...array),
         variance: variance(array, (getSum(array)/array.length)),
-        standard_deviation: Math.sqrt[variance],
+        standard_deviation: Math.sqrt(this.variance),
     };
     return ret;
 }
