@@ -64,7 +64,7 @@ export function getStatistics(array) {
         median: getMedian(array),
         min: Math.min(...array),
         max: Math.max(...array),
-        variance: variance(array, this.mean),
+        variance: variance(array, this[mean]),
         standard_deviation: Math.standard_deviation(...array),
     };
     return ret;
