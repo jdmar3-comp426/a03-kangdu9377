@@ -1,4 +1,5 @@
 import {variance} from "./data/stats_helpers.js";
+import {Math} from 'mathjs'
 
 /**
  * Gets the sum of an array of numbers.
