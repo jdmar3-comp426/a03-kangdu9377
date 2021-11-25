@@ -97,7 +97,9 @@ export const tenTimesFifty = () => {
  *    everyEven([1, 1, 0, 1, 1], x => x === 1)  <--  returns false
  */
 export const everyEven = (arr, test) => {
-
+    let arr1 = arr.filter(x=>findIndex(x) % 2 == 0);
+    ret = arr1.filter(test);
+    return ret.length > arr.length/2
 };
 
 
