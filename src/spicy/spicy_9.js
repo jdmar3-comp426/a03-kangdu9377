@@ -100,7 +100,7 @@ export const everyEven = (arr, test) => {
     let arr1 = arr.filter(function(element, index, array){
         return (index % 2 === 0);
     });
-    ret = arr1.filter(test);
+    let ret = arr1.filter(test);
     return ret.length > arr.length/2
 };
 
