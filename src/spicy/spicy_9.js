@@ -158,6 +158,7 @@ export const filter = (arr, test) => {
     let pass = [];
     let fail = [];
     pass = arr.filter(test);
+    fail = arr.filter(x => !pass.includes(x));
     return {pass: pass, fail: fail}
 };
 
